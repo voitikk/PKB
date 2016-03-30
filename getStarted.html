@@ -26,14 +26,14 @@
 							<li><a href="pricing.html">Pricing</a></li>
 							<li><a href="faq.html">FAQ</a></li>
 							<li><a href="coaches.html">Meet Our Coaches</a></li>
-							
+
 						</ul>
 						<ul>
 							<li><a href="#ideal_video" id="#idvid" class="scrolly">The Ideal Video</a></li>
 							<li><a href="#email_ins" class="scrolly">Email Instructions</a></li>
 							<li><a href="#main" class="scrolly">Top</a></li>
 						</ul>
-						
+
 					</nav>
 				</header>
 
@@ -78,18 +78,18 @@
 											<li>3. Film the player from 2 or 3 angles - this allows our professionals to analyze every moving piece during the motion</li>
 											<li  id="email_ins">4. Film the video on an iPhone, iPad, Samsung, or other mobile device</li>
 										</ul>
-							
+
 							<section>
 								<header class="major">
 									<h2>Email Instructions</h2>
 									<p>Below are the instructions for an Initial Analysis Email Request</p>
 								</header>
-								
-								
-		<!-- Form -->
+
+
+							<!-- Form -->
 							<section>
 								<h3>Form</h3>
-								<form method="post" action="#">
+									<form method="post" enctype="multipart/form-data" action="https://guarded-peak-95316.herokuapp.com/upload">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
 											<input type="text" name="name" id="name" value="" placeholder="Player Name" />
@@ -98,7 +98,7 @@
 											<input type="text" name="age" id="age" value="" placeholder="Player Age" />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="Parname" id="Parname" value="" placeholder="Parents Name" />
+											<input type="text" name="parentName" id="parentName" value="" placeholder="Parents Name" />
 										</div>
 										<div class="6u$ 12u$(xsmall)">
 											<input type="email" name="email" id="email" value="" placeholder="Parent's Email" />
@@ -108,30 +108,30 @@
 												<select name="category" id="category">
 													<option value="">- Area of Coaching Requested -</option>
 													<option value="1">Pitching</option>
-													<option value="1">Hitting</option>
-													<option value="1">Fielding</option>
+													<option value="2">Hitting</option>
+													<option value="3">Fielding</option>
 												</select>
 											</div>
 										</div>
 										<div class="12u$">
-											<textarea name="message" id="message" placeholder="Tell us a little bit about the player and his playing tendencies (2-5 sentences):" rows="6"></textarea>
+											<textarea name="aboutPlayer" id="aboutPlayer" placeholder="Tell us a little bit about the player and his playing tendencies (2-5 sentences):" rows="6"></textarea>
 										</div>
 										<div class="12u$">
-											<textarea name="message" id="message" placeholder="How did you hear about our service?" rows="6"></textarea>
+											<textarea name="howDidYouFindUs" id="howDidYouFindUs" placeholder="How did you hear about our service?" rows="6"></textarea>
 										</div>
 										<p>Please choose a video to upload<br>
-											<input type="file" name="datafile" size="40">
+											<input type="file" name="file" size="40">
 										</p>
 										<div class="12u$">
 											<ul class="actions">
-												<li><input type="submit" value="Submit" class="special" /></li>
+												<li><input type="submit" value="Upload" class="special" /></li>
 												<li><input type="reset" value="Reset" /></li>
 											</ul>
 										</div>
 									</div>
 								</form>
 							</section>
-							
+
 
 					</div>
 				</div>
