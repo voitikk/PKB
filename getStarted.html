@@ -92,21 +92,21 @@
 									<form method="post" enctype="multipart/form-data" action="https://guarded-peak-95316.herokuapp.com/upload">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="name" id="name" value="" placeholder="Player Name" />
+											<input type="text" name="name" id="name" value="" placeholder="Player Name" required />
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-											<input type="text" name="age" id="age" value="" placeholder="Player Age" />
+											<input type="number" name="age" id="age" value="" placeholder="Player Age" required />
 										</div>
 										<div class="6u 12u$(xsmall)">
-											<input type="text" name="parentName" id="parentName" value="" placeholder="Parents Name" />
+											<input type="text" name="parentName" id="parentName" value="" placeholder="Parent's Name" required />
 										</div>
 										<div class="6u$ 12u$(xsmall)">
-											<input type="email" name="email" id="email" value="" placeholder="Parent's Email" />
+											<input type="email" name="email" id="email" value="" placeholder="Parent's Email" required />
 										</div>
 										<div class="12u$">
 											<div class="select-wrapper">
-												<select name="category" id="category">
-													<option value="">- Area of Coaching Requested -</option>
+												<select name="category" id="category" required>
+													<option value="" disabled selected>- Area of Coaching Requested -</option>
 													<option value="1">Pitching</option>
 													<option value="2">Hitting</option>
 													<option value="3">Fielding</option>
@@ -115,8 +115,8 @@
 										</div>
 										<div class="12u$">
 											<div class="select-wrapper">
-												<select name="pricing" id="pricing">
-													<option value="">- Pricing Options -</option>
+												<select name="pricing" id="pricing" required>
+													<option value="" disabled selected>- Pricing Options -</option>
 													<option value="1">Virtual-Analysis Video (Initial or Follow-Up) - $69.99</option>
 													<option value="2">Initial Written Analysis - $69.99</option>
 													<option value="3">Virtual-Analysis Video &amp; Written Evaluation Package (Initial) - $99.99 ~$140 Value~</option>
@@ -126,10 +126,10 @@
 											</div>
 										</div>
 										<div class="12u$">
-											<textarea name="aboutPlayer" id="aboutPlayer" placeholder="Tell us a little bit about the player and his playing tendencies (2-5 sentences):" rows="6"></textarea>
+											<textarea name="aboutPlayer" id="aboutPlayer" placeholder="Tell us a little bit about the player and his playing tendencies (2-5 sentences):" rows="6" required></textarea>
 										</div>
 										<div class="12u$">
-											<textarea name="howDidYouFindUs" id="howDidYouFindUs" placeholder="How did you hear about our service?" rows="6"></textarea>
+											<textarea name="howDidYouFindUs" id="howDidYouFindUs" placeholder="How did you hear about our service?" rows="6" required></textarea>
 										</div>
 										<p>Please choose a video to upload<br>
 											<input type="file" name="file" size="40">
